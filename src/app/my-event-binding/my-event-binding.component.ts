@@ -7,15 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyEventBindingComponent implements OnInit {
   lastLetter = '';
+  currentText = '';
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  onKey (theEvent) {
-    console.log(theEvent);
-    this.lastLetter = theEvent.key;
+  onKey (event, text) {
+    this.lastLetter = event.key;
+    this.currentText = text;
   }
 
 }

@@ -1,3 +1,10 @@
-<p>
-  my-two-way-binding works!
-</p>
+<h3> New Comment </h3>
+
+<input [(ngModel)]="yourName" type="text" placeholder="Luke Skywalker">
+<textarea [(ngModel)]="commentText" placeholder="Loved it!"></textarea>
+
+<h4> Preview </h4>
+<div>
+  <h5>{{ yourName }} said:</h5>
+  <p> {{ commentText }} </p>
+</div>

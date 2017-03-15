@@ -1,3 +1,4 @@
-<input (keyup)="onKey($event)" type="text">
+<input #theInput (keyup)="onKey($event, theInput.value)" type="text">
 
 <p> {{ lastLetter }} </p>
+<p> {{ currentText }} </p>
