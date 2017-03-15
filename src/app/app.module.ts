@@ -11,6 +11,8 @@ import { MyMixedBindingComponent } from './my-mixed-binding/my-mixed-binding.com
 import { MyTwoWayBindingComponent } from './my-two-way-binding/my-two-way-binding.component';
 import { BuiltInPipesComponent } from './built-in-pipes/built-in-pipes.component';
 
+import { CapitalizePipe } from './pipes/capitalize.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,8 @@ import { BuiltInPipesComponent } from './built-in-pipes/built-in-pipes.component
     MyEventBindingComponent,
     MyMixedBindingComponent,
     MyTwoWayBindingComponent,
-    BuiltInPipesComponent
+    BuiltInPipesComponent,
+    CapitalizePipe
   ],
   imports: [
     BrowserModule,

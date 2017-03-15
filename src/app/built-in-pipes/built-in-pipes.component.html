@@ -8,3 +8,8 @@
 <button (click)="increment()">
   Add One Day
 </button>
+
+
+<h4> What's your name? </h4>
+<input [(ngModel)]="yourName" type="text" placeholder="Izzy Ironside">
+<p> Hello, {{ yourName | capitalize }}. </p>
