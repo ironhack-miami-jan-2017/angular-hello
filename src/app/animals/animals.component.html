@@ -1,0 +1,16 @@
+<h3> Animals </h3>
+
+<button (click)="toggleBlack()"> Toggle Black </button>
+<button (click)="toggleYellow()"> Toggle Yellow </button>
+<button (click)="toggleBig()"> Toggle Big </button>
+
+<section [ngClass]="{ black: isBlackBg, yellow: isYellowText, big: isLarge }">
+  <div *ngFor="let oneAnimal of animals; let x = index; let isLast = last">
+    <p *ngIf="isLast"> Last ONE! </p>
+
+    <h4> {{ oneAnimal.name }} </h4>
+
+    <p> {{ oneAnimal.category }}</p>
+    <p> {{ oneAnimal.id }} (order {{ x }})</p>
+  </div>
+</section>

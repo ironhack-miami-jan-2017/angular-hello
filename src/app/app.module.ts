@@ -12,6 +12,7 @@ import { MyTwoWayBindingComponent } from './my-two-way-binding/my-two-way-bindin
 import { BuiltInPipesComponent } from './built-in-pipes/built-in-pipes.component';
 
 import { CapitalizePipe } from './pipes/capitalize.pipe';
+import { AnimalsComponent } from './animals/animals.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CapitalizePipe } from './pipes/capitalize.pipe';
     MyMixedBindingComponent,
     MyTwoWayBindingComponent,
     BuiltInPipesComponent,
-    CapitalizePipe
+    CapitalizePipe,
+    AnimalsComponent
   ],
   imports: [
     BrowserModule,

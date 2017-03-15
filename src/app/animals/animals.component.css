@@ -1,0 +1,14 @@
+.black {
+  background-color: black;
+  color: orange;
+}
+
+.yellow {
+  color: yellow;
+  border: 2px solid pink;
+  border-radius: 3px;
+}
+
+.big {
+  font-size: 50px;
+}
