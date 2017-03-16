@@ -13,6 +13,7 @@ import { BuiltInPipesComponent } from './built-in-pipes/built-in-pipes.component
 
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { AnimalsComponent } from './animals/animals.component';
+import { MySignupFormComponent } from './my-signup-form/my-signup-form.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AnimalsComponent } from './animals/animals.component';
     MyTwoWayBindingComponent,
     BuiltInPipesComponent,
     CapitalizePipe,
-    AnimalsComponent
+    AnimalsComponent,
+    MySignupFormComponent
   ],
   imports: [
     BrowserModule,
